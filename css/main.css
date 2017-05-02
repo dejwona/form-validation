@@ -1,0 +1,440 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../font/Roboto-Regular-webfont.eot');
+    src: url('../font/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Roboto-Regular-webfont.woff') format('woff'),
+         url('../font/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('../font/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotothin';
+    src: url('../font/Roboto-Thin-webfont.eot');
+    src: url('../font/Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Roboto-Thin-webfont.woff') format('woff'),
+         url('../font/Roboto-Thin-webfont.ttf') format('truetype'),
+         url('../font/Roboto-Thin-webfont.svg#robotothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotoblack';
+    src: url('../font/Roboto-Black-webfont.eot');
+    src: url('../font/Roboto-Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Roboto-Black-webfont.woff') format('woff'),
+         url('../font/Roboto-Black-webfont.ttf') format('truetype'),
+         url('../font/Roboto-Black-webfont.svg#robotoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: 'robotoregular';
+}
+.container {
+    height: 100%;
+    background: url("../img/background.jpg") no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #242424;
+}
+.box {
+    animation: boxAnimation 3s ease 0.1s both;
+    margin-left: 60px;
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: row; 
+}
+@keyframes boxAnimation {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0); -ms-transform: scale(0); -o-transform: scale(0); transform: scale(0);  
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(0); transform: scale(1); 
+    }
+}
+.flex-item1 {
+    background-image: url("../img/leftImg.png");
+    background-repeat: no-repeat;
+    background-color: black;
+    width: 308px;
+    max-height: 552px;
+    height: 70%;
+    line-height: 20px;
+}
+.flex-item2 {
+    background-color: #f1f1f4;
+    width: 470px;
+    max-height: 552px;
+    height: 70%;
+}
+.flex-item3 {
+    color: black;
+    font-weight: bold;
+    width: 60px;
+    max-height: 552px;
+    height: 70%;
+    padding-right: 2%;
+}
+.titleForm {
+    font-family: 'robotothin';
+    color: white;
+    font-size: 34pt;
+    margin-left: 50px;
+    line-height: 0;
+} 
+.titleForm::before {
+    margin-top: -111px;
+    content: "";
+    display: block;
+}
+.titleForm::after {
+    margin-top: 80px;
+    content: "";
+    display: block;
+    border-bottom: 2px solid #1bfec0;
+    width: 70px;
+}
+/*menu*/
+.tabMenu {
+    margin-top: 107px;
+    color: #555556;
+    font-size: 9pt;
+}
+.moduleMenu {
+    height: 90px;
+}
+.namberMenu {
+    margin: 0 0 6px 11px;
+}
+.activeNumberMenu {
+    color: #f3f3f3;
+    padding-bottom: 0;
+}
+.lineMenu {
+    margin-bottom: 15px;
+    width: 25px;
+    height: 2px;
+    background-color: #555556;
+}
+.activeLine {
+    background-color: #1cd4a3;
+}
+.info {
+    color: #353535;
+    font-size: 12pt;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 36px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.boxInfo {
+    padding: 50px;
+    margin-top:-33px;
+    position: relative;
+}
+label {
+    margin-left: 15px;
+    font-size: 10pt;
+    color: #a2a2af;
+}
+.formContakt {
+    background-color: #f1f1f4;
+    border: 0;
+    border-bottom: 2px solid #dfdfe4;
+    width: 100%;
+    padding-top: 5%;
+    margin-bottom: 4%;
+    box-sizing: border-box;
+    padding: 15px;
+    outline: 0;
+    font-family: inherit;
+    font-size: 0.95em;
+}
+.formContaktActive {
+    border-bottom: 2px solid #531fc0;
+}
+.formContakt:focus {
+    outline: 0;
+}
+.areaCode {
+    width: 34%;
+    margin-right: 3%;
+}
+#codePhone {
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;  
+}
+select::-ms-expand { 
+    display: none; /* hide the default arrow in ie10 and ie11 */
+}
+.selected-field {
+    position: relative;
+}
+ .arrow-down {
+    position:absolute;
+    right: 72%;
+    top: 24px;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #c6c7c8;
+}
+.phone {
+    width: 61%;
+}
+.dataForm {
+    border: 2px solid #dfdfe4;
+    height: 50px;
+    padding-left: 2%;
+}
+.dataForm:active {
+    border: 2px solid #531fc0;
+}
+.dataForm:focus {
+    outline: 0;
+}
+/*checkbox*/
+.options {
+    padding: 15px 0 0 0;
+    position: relative;
+    margin: 0 0 0 -15px;
+}
+.options > label > input {
+    display: none;
+    position: absolute;
+    top: -22px;
+    left: 42px;
+}
+.options > label {
+    padding-right: 30px;
+}
+.item {
+    position: relative;
+}
+.options > label > .backgroundCheck {
+    position: absolute;	
+    top: -22px;
+    left: 43px;
+    border: 2px solid #dfdfe4;
+    padding: 0px;
+    height:15px;
+    width:15px;
+    background-color: #f1f1f4;
+    border-style: 0;  
+    outline: none; 
+}
+.options > label > input:checked + .backgroundCheck {
+    background: url(../img/checkImg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: -22px;
+    left: 43px;
+    font-size: 1.3em;
+    line-height: 0.8;
+    color: #09ad7e;
+    background-size:4px 4px;
+    background-color: #f1f1f4;
+    border: 2px solid #1cd4a3;
+}
+.options > label > .backgroundImg {
+    display: inline-block;
+    background-size:15px 15px;
+    border: 2px solid #dfdfe4;
+    padding: 0px;
+    height:50px;
+    width:50px;
+}
+.options > label > .foto1 {
+    background: url(../img/woman.png);
+    background-repeat: no-repeat;
+    background-position:center center;
+}
+.options > label > .foto2 {
+    background: url(../img/man.png);
+    background-repeat: no-repeat;
+    background-position:center center;
+}
+.activeFrame {
+    border: 2px solid #1cd4a3 !important;
+    z-index: 100;
+}
+/*date of birth*/
+.dateOfBirth {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.dataForm:not(:last-Child) {
+    margin-top: 7px;
+    margin-right: 2%;
+}
+.dataFormActive {
+    border: 2px solid #531fc0;
+}
+.dayForm {
+    background-color: #f1f1f4;
+    width: 11%;
+}
+.monthForm {
+    background-color: #f1f1f4;
+    width: 34%;
+}
+.yearForm {
+    background-color: #f1f1f4;
+    width: 26%;
+}
+.hyphen {
+    font-family: arial;
+    font-size: 25pt;
+    color: #dfdfe4;
+    margin-right: 1.5%;
+}
+/*button*/
+.submitButton {
+    margin-left: 49.5%;
+    display: flex;
+    position: absolute;
+}
+[type="submit"] {
+    color: white;
+    font-size: 12pt;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 187px;
+    height: 50px;
+    background-color: #8151ea;
+    border: none;
+}
+.arrow {
+    cursor: pointer;
+    background-color: #7841f4;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.arrow img {
+    padding-top: 20px;
+}
+.error {
+    font-family: 'robotoblack';
+    position: absolute;
+    font-size: 10pt;
+    line-height: 10pt;
+    color: #8b58ff;
+    top: 100px;
+    left: 65px;
+    max-width:70%;
+}
+
+
+@media screen and (max-width: 816px) { 
+.boxInfo {
+    padding: 30px;
+    margin-top:-33px;
+}
+.titleForm {
+    font-size: 30pt;
+    margin-left: 30px;
+}
+.titleForm::after {
+    margin-top: 83px;
+}
+ .arrow-down {
+    right: 66%;
+ }
+.box {
+    margin-left: 0px;
+}
+.formContakt {
+    margin-bottom: 5%;
+}
+.dateOfBirth {
+    padding-bottom: 12%;
+}
+.dayForm {
+    width: 19%;
+}
+.monthForm {
+    width: 19%;
+}
+.yearForm {
+    width: 26%;
+}
+.submitButton {
+    margin-left: 34.5%;
+}
+.error {
+    top: 85px;
+    left: 45px;
+}
+
+}
+
+@media screen and (max-width: 550px) { 
+.boxInfo {
+    padding: 30px 25px;
+    margin-top:-33px;
+}
+.titleForm {
+    font-size: 30pt;
+    margin-left: 30px;
+}
+.titleForm::after {
+    margin-top: 83px;
+}
+.flex-item2 {
+    width: 290px;
+}
+.flex-item1, .flex-item3 {
+    display: none;
+}
+.arrow-down {
+    right: 159px;
+}
+.formKontakt {
+    margin-bottom: 4%;
+}
+.box {
+    margin-left: 0px;
+}
+.dateOfBirth {
+    padding-bottom: 10%;
+}
+.dayForm {
+    width: 19%;
+}
+.monthForm {
+    width: 19%;
+}
+.yearForm {
+    width: 26%;
+}
+.submitButton {
+    margin-left: -1%;
+}
+.error {
+    top: 103px;
+    left: 40px;
+}
+
+}
